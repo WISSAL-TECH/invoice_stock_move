@@ -44,10 +44,10 @@ class AccountMove(models.Model):
                                                                     "created "
                                                                     "picking")
     invoice_picking_id = fields.Many2one(comodel_name='stock.picking',
-                                         string="Picking Id", copy=False,
+                                         string="Id de livraison", copy=False,
                                          help="corresponding picking")
     picking_type_id = fields.Many2one(comodel_name='stock.picking.type',
-                                      string='Picking Type',
+                                      string='Type',
                                       default=_get_stock_type_ids,
                                       help="This will determine picking "
                                            "type of incoming shipment")

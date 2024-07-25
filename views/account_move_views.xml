@@ -8,7 +8,7 @@
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
             <xpath expr="//header" position="inside">
-                <button name="action_stock_move" string="Transfer"
+                <button name="action_stock_move" string="Livrer"
                         type="object" class="oe_highlight"
                         invisible="state == 'draft' or picking_count == 1"/>
             </xpath>
@@ -22,7 +22,7 @@
                         class="oe_stat_button"
                         invisible="picking_count &lt; 1 or state == 'draft'"
                         icon="fa-truck">
-                    <field name="picking_count" string="Shipment"
+                    <field name="picking_count" string="Livraison"
                            widget="statinfo"/>
                 </button>
             </xpath>
